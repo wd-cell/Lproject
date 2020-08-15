@@ -1,0 +1,3 @@
+hello fstream
+exe
+bye

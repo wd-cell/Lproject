@@ -1,0 +1,10 @@
+{
+    "code-runner.executorMap":{
+        "c": "cd $dir && clang *.c -o $fileNameWithoutExt -g -Wall -static-libgcc && $dir$fileNameWithoutExt",
+        // "cpp": "cd $dir && clang++ *.cpp -o $fileNameWithoutExt -g -Wall -static-libgcc -std=c++17 && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && clang++ '$fileName' -o $fileNameWithoutExt -g -Wall -static-libgcc -std=c++11 && $dir$fileNameWithoutExt",
+    },
+    "files.associations": {
+        "iostream": "cpp"
+    }
+}
