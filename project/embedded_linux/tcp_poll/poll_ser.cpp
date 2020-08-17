@@ -18,7 +18,7 @@ int main(){
     sockaddr_in saddr; //服务器地址
     saddr.sin_family = AF_INET; //IPv4
     saddr.sin_port = (htons(8000));
-    saddr.sin_addr.s_addr = INADDR_ANY;
+    saddr.sin_addr.s_addr = INADDR_ANY; //表示本机的所有IP
 
     int len = 1;
     setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, &len, sizeof(len)); //设置socket选项
